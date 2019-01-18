@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e799d1ea-3be5-49d1-818a-cec24610bf5c" name="Default Changelist" comment="" />
+    <list default="true" id="e799d1ea-3be5-49d1-818a-cec24610bf5c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,13 +17,75 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+            <state relative-caret-position="809">
+              <caret line="89" column="37" selection-start-line="89" selection-start-column="37" selection-end-line="89" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/manutencao/Cliente.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="79" selection-start-line="8" selection-start-column="79" selection-end-line="8" selection-end-column="79" />
+              <folding>
+                <element signature="e#81#82#0" expanded="true" />
+                <element signature="e#104#105#0" expanded="true" />
+                <element signature="e#237#238#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/manutencao/Tecnico.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="35" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/manutencao/Pessoa.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+              <folding>
+                <element signature="e#159#160#0" expanded="true" />
+                <element signature="e#186#187#0" expanded="true" />
+                <element signature="e#226#227#0" expanded="true" />
+                <element signature="e#258#259#0" expanded="true" />
+                <element signature="e#293#294#0" expanded="true" />
+                <element signature="e#324#325#0" expanded="true" />
+                <element signature="e#372#373#0" expanded="true" />
+                <element signature="e#412#413#0" expanded="true" />
+                <element signature="e#447#448#0" expanded="true" />
+                <element signature="e#478#479#0" expanded="true" />
+                <element signature="e#526#527#0" expanded="true" />
+                <element signature="e#566#567#0" expanded="true" />
+                <element signature="e#596#597#0" expanded="true" />
+                <element signature="e#622#623#0" expanded="true" />
+                <element signature="e#660#661#0" expanded="true" />
+                <element signature="e#690#691#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Pessoa</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -28,6 +93,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/Pessoa.java" />
+        <option value="$PROJECT_DIR$/src/Cliente.java" />
+        <option value="$PROJECT_DIR$/src/Tecnico.java" />
+        <option value="$PROJECT_DIR$/src/manutencao/Pessoa.java" />
+        <option value="$PROJECT_DIR$/src/manutencao/Cliente.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
@@ -37,6 +107,9 @@
     <option name="y" value="53" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -50,6 +123,11 @@
               <item name="ManuTec" type="b2602c69:ProjectViewProjectNode" />
               <item name="pooprojeto" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ManuTec" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pooprojeto" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -57,6 +135,9 @@
       <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547823166004" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -115,10 +196,54 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/manutencao/Tecnico.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manutencao/Pessoa.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding>
+            <element signature="e#159#160#0" expanded="true" />
+            <element signature="e#186#187#0" expanded="true" />
+            <element signature="e#226#227#0" expanded="true" />
+            <element signature="e#258#259#0" expanded="true" />
+            <element signature="e#293#294#0" expanded="true" />
+            <element signature="e#324#325#0" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
+            <element signature="e#478#479#0" expanded="true" />
+            <element signature="e#526#527#0" expanded="true" />
+            <element signature="e#566#567#0" expanded="true" />
+            <element signature="e#596#597#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
+            <element signature="e#660#661#0" expanded="true" />
+            <element signature="e#690#691#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manutencao/Cliente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="79" selection-start-line="8" selection-start-column="79" selection-end-line="8" selection-end-column="79" />
+          <folding>
+            <element signature="e#81#82#0" expanded="true" />
+            <element signature="e#104#105#0" expanded="true" />
+            <element signature="e#237#238#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+        <state relative-caret-position="809">
+          <caret line="89" column="37" selection-start-line="89" selection-start-column="37" selection-end-line="89" selection-end-column="37" />
         </state>
       </provider>
     </entry>
