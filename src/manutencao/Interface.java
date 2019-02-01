@@ -13,11 +13,4 @@ public class Interface {
         System.out.println("6 - Relatório de clientes e suas manutenções");
         System.out.println("7 - Sair");
     }
-
-    public void menuCadastroClientes() {
-        System.out.println("insira o nome do cliente");
-        System.out.println("insira o cpf");
-    }
-
-
 }
