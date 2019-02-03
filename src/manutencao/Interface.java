@@ -19,4 +19,8 @@ public class Interface {
         System.out.println("12 - Relatório de clientes e suas manutenções");
         System.out.println("13 - Sair");
     }
+
+    public void desenhaCabecalhoListaClientes() {
+        System.out.println("***** LISTA DE CLIENTES CADASTRADOS *****");
+    }
 }

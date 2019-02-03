@@ -31,8 +31,8 @@ public class Cliente extends  Pessoa{
         String s =
                 "Nome do Cliente: " + getNome() + " \n" +
                 "Endereco: " + getEndereco() + " \n" +
-                "telefone: " + getTelefone() + " \n" +
-                "cpf: " + getCpf() + " \n";
+                "Telefone: " + getTelefone() + " \n" +
+                "CPF: " + getCpf() + " \n";
         return s;
     }
 }

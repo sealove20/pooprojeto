@@ -25,13 +25,21 @@ public class TestaManutencao {
                 tecnicos.add(tecnico.lerTecnico());
             } else if (opcao == 3) {
                 procedimentos.add(procedimento.lerProcedimento());
-            } else if (opcao == 6) {
-                System.out.println(clientes.size());
+            } else if (opcao == 4) {
+                inter.desenhaCabecalhoListaClientes();
                 for (Cliente cli: clientes)
                     System.out.println(cli);
+            } else if (opcao == 5) {
+                for (Tecnico tec: tecnicos)
+                    System.out.println(tec);
+            } else if (opcao == 6) {
+                for (Procedimento proc: procedimentos)
+                    System.out.println(proc);
+            } else if(opcao == 7) {
+
             }
 
-        } while(opcao != 7);
+        } while(opcao != 13);
 
     }
 }

@@ -26,4 +26,13 @@ public class Tecnico extends Pessoa {
         cpfTecnico = scan.nextLine();
         return new Tecnico(nomeTecnico, enderecoTecnico, telefoneTecnico, cpfTecnico);
     }
+
+    public String toString() {
+        String s =
+                "Nome do Tecnico: " + getNome() + " \n" +
+                        "Endereco: " + getEndereco() + " \n" +
+                        "Telefone: " + getTelefone() + " \n" +
+                        "CPF: " + getCpf() + " \n";
+        return s;
+    }
 }

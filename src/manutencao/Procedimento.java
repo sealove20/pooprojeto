@@ -40,4 +40,11 @@ public class Procedimento {
         nomeProcedimento = scan.nextLine();
         return new Procedimento(codigoProcedimento, nomeProcedimento);
     }
+
+    public String toString() {
+        String s =
+                "Código do procedimento: " + getCodigo() + " \n" +
+                "Nome do procedimento: " + getNome() + " \n";
+        return s;
+    }
 }
