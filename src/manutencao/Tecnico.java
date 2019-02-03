@@ -23,7 +23,7 @@ public class Tecnico extends Pessoa {
         System.out.println("Digite o telefone do técnico");
         telefoneTecnico = scan.nextLine();
         System.out.println("Digite o cpf do técnico");
-        cpfTecnico = scan.next();
+        cpfTecnico = scan.nextLine();
         return new Tecnico(nomeTecnico, enderecoTecnico, telefoneTecnico, cpfTecnico);
     }
 }
