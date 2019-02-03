@@ -1,8 +1,13 @@
 package manutencao;
 
+import java.util.Scanner;
+
 public class Procedimento {
     private String codigo;
     private String nome;
+
+    Scanner scan = new Scanner(System.in);
+
 
     public Procedimento(){}
 
@@ -25,5 +30,14 @@ public class Procedimento {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    Procedimento lerProcedimento() {
+        String codigoProcedimento, nomeProcedimento;
+        System.out.println("Digite o código do procedimento");
+        codigoProcedimento = scan.nextLine();
+        System.out.println("Digite o nome do procedimento");
+        nomeProcedimento = scan.nextLine();
+        return new Procedimento(codigoProcedimento, nomeProcedimento);
     }
 }

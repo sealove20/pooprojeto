@@ -8,7 +8,11 @@ public class TestaManutencao {
         Interface inter = new Interface();
         Scanner scan = new Scanner(System.in);
         ArrayList<Cliente> clientes = new ArrayList<>();
+        ArrayList<Tecnico> tecnicos = new ArrayList<>();
+        ArrayList<Procedimento> procedimentos = new ArrayList<>();
         Cliente cliente = new Cliente();
+        Tecnico tecnico = new Tecnico();
+        Procedimento procedimento = new Procedimento();
         int opcao = 0;
 
 
@@ -16,28 +20,11 @@ public class TestaManutencao {
             inter.desenhaMenu();
             opcao = scan.nextInt();
             if (opcao == 1) {
-//                cliente = cliente.lerCliente();
                 clientes.add(cliente.lerCliente());
-
             } else if (opcao == 2) {
-                String nomeTecnico, enderecoTecnico, telefoneTecnico, cpfTecnico;
-                System.out.println("Digite o nome do técnico");
-                nomeTecnico = scan.next();
-                System.out.println("Digite o endereco do técnico");
-                enderecoTecnico = scan.next();
-                System.out.println("Digite o telefone do técnico");
-                telefoneTecnico = scan.next();
-                System.out.println("Digite o cpf do técnico");
-                cpfTecnico = scan.next();
-                Tecnico novoTecnico = new Tecnico(nomeTecnico, enderecoTecnico, telefoneTecnico, cpfTecnico);
-
+                tecnicos.add(tecnico.lerTecnico());
             } else if (opcao == 3) {
-                String codigoProcedimento, nomeProcedimento;
-                System.out.println("Digite o código do procedimento");
-                codigoProcedimento = scan.next();
-                System.out.println("Digite o nome do procedimento");
-                nomeProcedimento = scan.next();
-                Procedimento procedimento = new Procedimento(codigoProcedimento, nomeProcedimento);
+                procedimentos.add(procedimento.lerProcedimento());
             } else if (opcao == 6) {
                 System.out.println(clientes.size());
                 for (Cliente cli: clientes)
