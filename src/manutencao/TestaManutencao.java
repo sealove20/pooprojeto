@@ -7,12 +7,7 @@ public class TestaManutencao {
     public static void main(String[] args) {
         Interface inter = new Interface();
         Scanner scan = new Scanner(System.in);
-        ArrayList<Cliente> clientes = new ArrayList<>();
-        ArrayList<Tecnico> tecnicos = new ArrayList<>();
-        ArrayList<Procedimento> procedimentos = new ArrayList<>();
-        Cliente cliente = new Cliente();
-        Tecnico tecnico = new Tecnico();
-        Procedimento procedimento = new Procedimento();
+        Aux aux = new Aux();
         int opcao = 0;
 
 
@@ -20,22 +15,24 @@ public class TestaManutencao {
             inter.desenhaMenu();
             opcao = scan.nextInt();
             if (opcao == 1) {
-                clientes.add(cliente.lerCliente());
+                aux.lerCliente();
             } else if (opcao == 2) {
-                tecnicos.add(tecnico.lerTecnico());
+                aux.lerTecnico();
             } else if (opcao == 3) {
-                procedimentos.add(procedimento.lerProcedimento());
+                aux.lerProcedimento();
             } else if (opcao == 4) {
-                inter.desenhaCabecalhoListaClientes();
-                for (Cliente cli: clientes)
-                    System.out.println(cli);
+                aux.mostrarClientes();
             } else if (opcao == 5) {
-                for (Tecnico tec: tecnicos)
-                    System.out.println(tec);
+                aux.mostrarTecnicos();
             } else if (opcao == 6) {
-                for (Procedimento proc: procedimentos)
-                    System.out.println(proc);
-            } else if(opcao == 7) {
+                aux.mostrarProcedimentos();
+            } else if (opcao == 7) {
+                aux.apagarCliente();
+            } else if (opcao == 8) {
+                aux.apagarTecnico();
+            } else if (opcao == 9) {
+                aux.apagarProcedimento();
+            } else if (opcao == 10) {
 
             }
 

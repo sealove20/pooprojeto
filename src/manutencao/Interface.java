@@ -20,7 +20,4 @@ public class Interface {
         System.out.println("13 - Sair");
     }
 
-    public void desenhaCabecalhoListaClientes() {
-        System.out.println("***** LISTA DE CLIENTES CADASTRADOS *****");
-    }
 }
