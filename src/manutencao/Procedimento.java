@@ -6,7 +6,7 @@ public class Procedimento {
     private String codigo;
     private String nome;
 
-    Scanner scan = new Scanner(System.in);
+    private Scanner scan = new Scanner(System.in);
 
 
     public Procedimento(){}

@@ -33,7 +33,9 @@ public class TestaManutencao {
             } else if (opcao == 9) {
                 aux.apagarProcedimento();
             } else if (opcao == 10) {
-
+                aux.realizarManutencao();
+            } else if(opcao == 11) {
+                aux.mostrarManutencao();
             }
 
         } while(opcao != 13);

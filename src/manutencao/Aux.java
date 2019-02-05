@@ -1,3 +1,4 @@
+// Classe criada para manipular dados das classes, inicializar-las e manipular arquivos;
 package manutencao;
 
 import java.util.ArrayList;
@@ -11,6 +12,11 @@ public class Aux {
     ArrayList<Manutencao> manutencoes= new ArrayList<>();
 
     Scanner scan = new Scanner(System.in);
+
+//    public void percorreLista(ArrayList a) {
+//        for (ArrayList<> item: a)
+//            System.out.println(item);
+//    }
 
 
     public void lerCliente() {
@@ -73,11 +79,11 @@ public class Aux {
 
     public void apagarCliente() {
         int i = 0;
+        // Percorre o ArrayList e plota 1 menu com todos os clientes cadastrados
         for (Cliente cli : clientes) {
             System.out.println(i + " - " + cli.getNome());
             i++;
         }
-
         System.out.println("Escolha um cliente para deletar");
         int op = scan.nextInt();
         clientes.remove(op);
@@ -86,6 +92,7 @@ public class Aux {
 
     public void apagarTecnico() {
         int i = 0;
+        // Percorre o ArrayList e plota 1 menu com todos os técnicos cadastrados
         for (Tecnico tec : tecnicos) {
             System.out.println(i + " - " + tec.getNome());
             i++;
@@ -99,21 +106,20 @@ public class Aux {
 
     public void apagarProcedimento() {
         int i = 0;
+        // Percorre o ArrayList e plota 1 menu com todos os procedimentos cadastrados
         for (Procedimento proc : procedimentos) {
             System.out.println(i + " - " + proc.getNome());
             i++;
         }
 
-        System.out.println("Escolha um cliente para deletar");
+        System.out.println("Escolha um procedimento para deletar");
         int op = scan.nextInt();
         procedimentos.remove(op);
         System.out.println("Ação realizada com sucesso");
     }
 
     public void realizarManutencao() {
-        Cliente cliente;
-        Tecnico tecnico;
-        Procedimento procedimento;
+        Manutencao manutencao = new Manutencao();
 
         int i = 0;
         for (Cliente cli : clientes) {
@@ -123,7 +129,51 @@ public class Aux {
 
         System.out.println("Escolha o cliente");
         int op = scan.nextInt();
-        cliente = clientes.get(op);
-        System.out.println("Ação realizada com sucesso");
+        manutencao.setCliente(clientes.get(op));
+
+        i = 0;
+        for (Tecnico tec : tecnicos) {
+            System.out.println(i + " - " + tec.getNome());
+            i++;
+        }
+
+        System.out.println("Escolha o técnico");
+        op = scan.nextInt();
+        manutencao.setTecnico(tecnicos.get(op));
+
+        int opProcedimentos = 0;
+        do {
+
+            i = 0;
+            for (Procedimento proc : procedimentos) {
+                System.out.println(i + " - " + proc.getNome());
+                i++;
+            }
+
+            System.out.println("Escolha um procedimento");
+            op = scan.nextInt();
+            procedimentos.add(procedimentos.get(op));
+
+            System.out.println("Deseja adicionar mais procedimentos?");
+            System.out.println("1 - Sim");
+            System.out.println("2 - Não");
+            opProcedimentos = scan.nextInt();
+        } while(opProcedimentos != 2);
+
+        String descricao = "";
+        System.out.println("Digite a descrição da manutenção");
+        descricao = scan.nextLine();
+        manutencao.setDescricao(descricao);
+
+        System.out.println("Manutenção cadastrada com sucesso");
+        manutencoes.add(manutencao);
+
+    }
+
+    public void mostrarManutencao() {
+        System.out.println("***** LISTA DE MANUTENÇÕES CADASTRADOS *****");
+        for (Manutencao man : manutencoes) {
+            System.out.println(man);
+        }
     }
 }

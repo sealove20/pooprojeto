@@ -1,10 +1,11 @@
 package manutencao;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Cliente extends  Pessoa{
 
-    Scanner scan = new Scanner(System.in);
+    private Scanner scan = new Scanner(System.in);
 
 
     public Cliente() {
