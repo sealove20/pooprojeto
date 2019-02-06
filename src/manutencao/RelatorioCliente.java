@@ -1,4 +1,8 @@
 package manutencao;
 
-public class RelatorioCliente {
+public class RelatorioCliente extends Relatorio {
+
+    public void mostrarRelatorio() {
+
+    }
 }

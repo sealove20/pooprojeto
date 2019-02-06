@@ -1,4 +1,8 @@
 package manutencao;
 
-public class Relatorio {
+public abstract class Relatorio {
+
+    private Manutencao manutencao;
+
+    public abstract void mostrarRelatorio();
 }

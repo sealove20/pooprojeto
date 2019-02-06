@@ -13,11 +13,6 @@ public class Aux {
 
     Scanner scan = new Scanner(System.in);
 
-//    public void percorreLista(ArrayList a) {
-//        for (ArrayList<> item: a)
-//            System.out.println(item);
-//    }
-
 
     public void lerCliente() {
         System.out.println("*** CADASTRO DE CLIENTE ***");
