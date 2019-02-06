@@ -33,12 +33,13 @@ public class Manutencao {
         return tecnico;
     }
 
-    public ArrayList<Procedimento> getProcedimentos() {
-        return procedimentos;
-    }
 
     public String getDescricao() {
         return descricao;
+    }
+
+    public ArrayList<Procedimento> getProcedimentos() {
+        return procedimentos;
     }
 
     Manutencao() {}
@@ -54,12 +55,13 @@ public class Manutencao {
         String s =
                 "Nome do Cliente: " + getCliente() + " \n" +
                         "Técnico: " + getTecnico() + " \n" +
-                        "Descricao: " + getDescricao() + " \n";
+                        "Descricao: " + getDescricao() + " \n" +
+                        "Procedimentos: \n";
                         for (Procedimento pro: procedimentos) {
-                            s += pro.getNome();
-                            s += pro.getCodigo();
+                            s += "Código do procedimento: " + pro.getCodigo() + " -";
+                            s += "Tipo de procedimento: " +pro.getNome() + " \n";
                         }
-                        s += "*********";
+                        s += "******************************************************";
         return s;
 
     }

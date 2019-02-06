@@ -142,6 +142,7 @@ public class Aux {
         manutencao.setTecnico(tecnicos.get(op));
 
         int opProcedimentos = 0;
+        ArrayList<Procedimento> listaProcedimentosManutencao = new ArrayList<>();
         do {
 
             i = 0;
@@ -152,17 +153,17 @@ public class Aux {
 
             System.out.println("Escolha um procedimento");
             op = scan.nextInt();
-            procedimentos.add(procedimentos.get(op));
+            listaProcedimentosManutencao.add(procedimentos.get(op));
 
             System.out.println("Deseja adicionar mais procedimentos?");
             System.out.println("1 - Sim");
             System.out.println("2 - Não");
             opProcedimentos = scan.nextInt();
         } while(opProcedimentos != 2);
+        manutencao.setProcedimentos(listaProcedimentosManutencao);
 
-        String descricao = "";
         System.out.println("Digite a descrição da manutenção");
-        descricao = scan.nextLine();
+        String descricao = scan.next();
         manutencao.setDescricao(descricao);
 
         System.out.println("Manutenção cadastrada com sucesso");
