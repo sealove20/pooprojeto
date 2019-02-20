@@ -7,11 +7,19 @@ import java.util.Scanner;
 public class Aux {
 
     ArrayList<Cliente> clientes = new ArrayList<>();
+    ArrayList<Cliente> clientesArq;
     ArrayList<Tecnico> tecnicos = new ArrayList<>();
     ArrayList<Procedimento> procedimentos = new ArrayList<>();
     ArrayList<Manutencao> manutencoes= new ArrayList<>();
+    ManipulaArquivo mani;
+    RelatorioCliente relatorioCliente = new RelatorioCliente();
+    RelatorioTecnico relatorio = new RelatorioTecnico();
 
     Scanner scan = new Scanner(System.in);
+    String arquivoCliente = "clientes.bin";
+    String arquivoTecnico = "tecnicos.bin";
+    String arquivoProcedimento = "procedimentos.bin";
+    String arquivoManutencao = "manutencao.bin";
 
 
     public void lerCliente() {
@@ -70,6 +78,12 @@ public class Aux {
         System.out.println("***** LISTA DE PROCEDIMENTOS CADASTRADOS *****");
         for (Procedimento proc: procedimentos)
             System.out.println(proc);
+    }
+
+    public void mostrarManutencao() {
+        System.out.println("***** LISTA DE MANUTENÇÕES CADASTRADOS *****");
+        for (Manutencao manu: manutencoes)
+            System.out.println(manu);
     }
 
     public void apagarCliente() {
@@ -154,22 +168,54 @@ public class Aux {
             System.out.println("1 - Sim");
             System.out.println("2 - Não");
             opProcedimentos = scan.nextInt();
+
         } while(opProcedimentos != 2);
         manutencao.setProcedimentos(listaProcedimentosManutencao);
 
         System.out.println("Digite a descrição da manutenção");
-        String descricao = scan.next();
+        scan.nextLine();
+        String descricao = scan.nextLine();
         manutencao.setDescricao(descricao);
 
         System.out.println("Manutenção cadastrada com sucesso");
         manutencoes.add(manutencao);
-
+        relatorioCliente.setManutencao(manutencoes);
     }
 
-    public void mostrarManutencao() {
-        System.out.println("***** LISTA DE MANUTENÇÕES CADASTRADOS *****");
-        for (Manutencao man : manutencoes) {
-            System.out.println(man);
+    public void relatorioCliente() {
+        for (Cliente cli : clientes) {
+            System.out.println(cli.getNome() + " Pediu: ");
+            for (Manutencao manu: manutencoes)
+                if (manu.getCliente().getNome().equals(cli.getNome()))
+                    System.out.println(manu.getDescricao());
         }
     }
+
+    public void relatorioTecnico() {
+        for(Tecnico tec : tecnicos) {
+            System.out.println(tec.getNome() + " Realizou: ");
+            for(Manutencao manu: manutencoes)
+                if(manu.getTecnico().getNome().equals(tec.getNome()))
+                    System.out.println(manu.getDescricao());
+        }
+    }
+
+
+
+
+    public void escreverArquivo() {
+        mani.escreverArquivoCliente(clientes, arquivoCliente);
+        mani.escreverArquivoTecnico(tecnicos, arquivoTecnico);
+        mani.escreverArquivoProcedimento(procedimentos, arquivoProcedimento);
+        mani.escreverArquivoManutencao(manutencoes, arquivoManutencao);
+
+    }
+
+    public void lerArquivo() {
+        clientes = mani.lerArquivoCliente(arquivoCliente);
+        tecnicos = mani.lerArquivoTecnico(arquivoTecnico);
+        procedimentos = mani.lerArquivoProcedimento(arquivoProcedimento);
+        manutencoes = mani.lerArquivoManutencao(arquivoManutencao);
+    }
+
 }

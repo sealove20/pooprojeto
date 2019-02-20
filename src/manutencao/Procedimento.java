@@ -1,13 +1,10 @@
 package manutencao;
 
-import java.util.Scanner;
+import java.io.Serializable;
 
-public class Procedimento {
+public class Procedimento implements Serializable {
     private String codigo;
     private String nome;
-
-    private Scanner scan = new Scanner(System.in);
-
 
     public Procedimento(){}
 
@@ -32,14 +29,6 @@ public class Procedimento {
         this.nome = nome;
     }
 
-    Procedimento lerProcedimento() {
-        String codigoProcedimento, nomeProcedimento;
-        System.out.println("Digite o código do procedimento");
-        codigoProcedimento = scan.nextLine();
-        System.out.println("Digite o nome do procedimento");
-        nomeProcedimento = scan.nextLine();
-        return new Procedimento(codigoProcedimento, nomeProcedimento);
-    }
 
     public String toString() {
         String s =

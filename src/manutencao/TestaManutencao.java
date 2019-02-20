@@ -1,6 +1,5 @@
 package manutencao;
 import java.util.Scanner;
-import java.util.ArrayList;
 
 public class TestaManutencao {
 
@@ -9,7 +8,8 @@ public class TestaManutencao {
         Scanner scan = new Scanner(System.in);
         Aux aux = new Aux();
         int opcao = 0;
-
+        ManipulaArquivo arq = new ManipulaArquivo();
+        aux.lerArquivo();
 
         do {
             inter.desenhaMenu();
@@ -35,7 +35,12 @@ public class TestaManutencao {
             } else if (opcao == 10) {
                 aux.realizarManutencao();
             } else if(opcao == 11) {
-                aux.mostrarManutencao();
+                aux.relatorioTecnico();
+            } else if(opcao == 12) {
+                aux.relatorioCliente();
+            } else if(opcao == 13) {
+                System.out.println("Volte sempre");
+                aux.escreverArquivo();
             }
 
         } while(opcao != 13);

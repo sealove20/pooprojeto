@@ -1,13 +1,23 @@
 package manutencao;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Manutencao {
+public class Manutencao implements Serializable {
 
     private Cliente cliente;
     private Tecnico tecnico;
     private ArrayList<Procedimento> procedimentos;
     private String descricao;
+
+    public Manutencao(Cliente cliente, Tecnico tecnico, ArrayList<Procedimento> procedimentos, String descricao) {
+        this.cliente = cliente;
+        this.tecnico = tecnico;
+        this.procedimentos = procedimentos;
+        this.descricao = descricao;
+    }
+
+    Manutencao() {}
 
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
@@ -40,15 +50,6 @@ public class Manutencao {
 
     public ArrayList<Procedimento> getProcedimentos() {
         return procedimentos;
-    }
-
-    Manutencao() {}
-
-    public Manutencao(Cliente cliente, Tecnico tecnico, ArrayList<Procedimento> procedimentos, String descricao) {
-        this.cliente = cliente;
-        this.tecnico = tecnico;
-        this.procedimentos = procedimentos;
-        this.descricao = descricao;
     }
 
     public String toString() {

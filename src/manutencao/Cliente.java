@@ -1,12 +1,8 @@
 package manutencao;
 
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.io.Serializable;
 
-public class Cliente extends  Pessoa{
-
-    private Scanner scan = new Scanner(System.in);
-
+public class Cliente  extends Pessoa  implements Serializable {
 
     public Cliente() {
         super();

@@ -1,6 +1,8 @@
 package manutencao;
 
-public class Pessoa {
+import java.io.Serializable;
+
+public class Pessoa implements Serializable {
     private String nome;
     private String endereco;
     private String telefone;
