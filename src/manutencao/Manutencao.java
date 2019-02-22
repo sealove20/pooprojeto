@@ -52,12 +52,12 @@ public class Manutencao implements Serializable {
         return procedimentos;
     }
 
+
     public String toString() {
         String s =
-                "Nome do Cliente: " + getCliente() + " \n" +
-                        "Técnico: " + getTecnico() + " \n" +
-                        "Descricao: " + getDescricao() + " \n" +
-                        "Procedimentos: \n";
+                getCliente() + " \n" +
+                        getTecnico() + " \n" +
+                        "Descrição: " + getDescricao() + " \n" ;
                         for (Procedimento pro: procedimentos) {
                             s += "Código do procedimento: " + pro.getCodigo() + " -";
                             s += "Tipo de procedimento: " +pro.getNome() + " \n";

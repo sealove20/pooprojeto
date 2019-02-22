@@ -6,20 +6,19 @@ import java.util.Scanner;
 
 public class Aux {
 
-    ArrayList<Cliente> clientes = new ArrayList<>();
-    ArrayList<Cliente> clientesArq;
-    ArrayList<Tecnico> tecnicos = new ArrayList<>();
-    ArrayList<Procedimento> procedimentos = new ArrayList<>();
-    ArrayList<Manutencao> manutencoes= new ArrayList<>();
-    ManipulaArquivo mani;
-    RelatorioCliente relatorioCliente = new RelatorioCliente();
-    RelatorioTecnico relatorio = new RelatorioTecnico();
+    private ArrayList<Cliente> clientes = new ArrayList<>();
+    private ArrayList<Cliente> clientesArq;
+    private ArrayList<Tecnico> tecnicos = new ArrayList<>();
+    private ArrayList<Procedimento> procedimentos = new ArrayList<>();
+    private ArrayList<Manutencao> manutencoes= new ArrayList<>();
+    private ManipulaArquivo mani;
 
-    Scanner scan = new Scanner(System.in);
-    String arquivoCliente = "clientes.bin";
-    String arquivoTecnico = "tecnicos.bin";
-    String arquivoProcedimento = "procedimentos.bin";
-    String arquivoManutencao = "manutencao.bin";
+
+    private Scanner scan = new Scanner(System.in);
+    private String arquivoCliente = "clientes.bin";
+    private String arquivoTecnico = "tecnicos.bin";
+    private String arquivoProcedimento = "procedimentos.bin";
+    private String arquivoManutencao = "manutencao.bin";
 
 
     public void lerCliente() {
@@ -32,22 +31,26 @@ public class Aux {
         String telefoneCliente = scan.nextLine();
         System.out.println("Digite o cpf do cliente");
         String cpfCliente = scan.nextLine();
-        Cliente cliente = new Cliente(nomeCliente, enderecoCliente, telefoneCliente, cpfCliente);
+        System.out.println("Digite a renda do cliente");
+        double rendaCliente = scan.nextDouble();
+        Cliente cliente = new Cliente(nomeCliente, enderecoCliente, telefoneCliente, cpfCliente, rendaCliente);
         clientes.add(cliente);
     }
 
     public void lerTecnico() {
         System.out.println("*** CADASTRO DE TÉCNICO ***");
-        String nomeTecnico, enderecoTecnico, telefoneTecnico, cpfTecnico;
+        scan.nextLine();
         System.out.println("Digite o nome do técnico");
-        nomeTecnico = scan.nextLine();
+        String nomeTecnico = scan.nextLine();
         System.out.println("Digite o endereco do técnico");
-        enderecoTecnico = scan.nextLine();
+        String enderecoTecnico = scan.nextLine();
         System.out.println("Digite o telefone do técnico");
-        telefoneTecnico = scan.nextLine();
+        String telefoneTecnico = scan.nextLine();
         System.out.println("Digite o cpf do técnico");
-        cpfTecnico = scan.nextLine();
-        Tecnico tecnico = new Tecnico(nomeTecnico, enderecoTecnico, telefoneTecnico, cpfTecnico);
+        String cpfTecnico = scan.nextLine();
+        System.out.println("Digite a especialidade do técnico");
+        String especialidadeTecnico = scan.nextLine();
+        Tecnico tecnico = new Tecnico(nomeTecnico, enderecoTecnico, telefoneTecnico, cpfTecnico, especialidadeTecnico);
         tecnicos.add(tecnico);
     }
 
@@ -78,12 +81,6 @@ public class Aux {
         System.out.println("***** LISTA DE PROCEDIMENTOS CADASTRADOS *****");
         for (Procedimento proc: procedimentos)
             System.out.println(proc);
-    }
-
-    public void mostrarManutencao() {
-        System.out.println("***** LISTA DE MANUTENÇÕES CADASTRADOS *****");
-        for (Manutencao manu: manutencoes)
-            System.out.println(manu);
     }
 
     public void apagarCliente() {
@@ -179,29 +176,17 @@ public class Aux {
 
         System.out.println("Manutenção cadastrada com sucesso");
         manutencoes.add(manutencao);
-        relatorioCliente.setManutencao(manutencoes);
     }
 
     public void relatorioCliente() {
-        for (Cliente cli : clientes) {
-            System.out.println(cli.getNome() + " Pediu: ");
-            for (Manutencao manu: manutencoes)
-                if (manu.getCliente().getNome().equals(cli.getNome()))
-                    System.out.println(manu.getDescricao());
-        }
+        Relatorio relatorio = new Relatorio();
+        relatorio.relatorioCliente(clientes, manutencoes);
     }
 
     public void relatorioTecnico() {
-        for(Tecnico tec : tecnicos) {
-            System.out.println(tec.getNome() + " Realizou: ");
-            for(Manutencao manu: manutencoes)
-                if(manu.getTecnico().getNome().equals(tec.getNome()))
-                    System.out.println(manu.getDescricao());
-        }
+        Relatorio relatorio = new Relatorio();
+        relatorio.relatorioTecnico(tecnicos, manutencoes);
     }
-
-
-
 
     public void escreverArquivo() {
         mani.escreverArquivoCliente(clientes, arquivoCliente);
@@ -217,5 +202,4 @@ public class Aux {
         procedimentos = mani.lerArquivoProcedimento(arquivoProcedimento);
         manutencoes = mani.lerArquivoManutencao(arquivoManutencao);
     }
-
 }

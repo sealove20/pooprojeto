@@ -3,17 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="e799d1ea-3be5-49d1-818a-cec24610bf5c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arquivo.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manutencao.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/procedimentos.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/manutencao/Aux.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manutencao/Aux.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/manutencao/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manutencao/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/manutencao/ManipulaArquivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manutencao/ManipulaArquivo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/manutencao/Manutencao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manutencao/Manutencao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/manutencao/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manutencao/Pessoa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/manutencao/Procedimento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manutencao/Procedimento.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/manutencao/Relatorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manutencao/Relatorio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/manutencao/RelatorioCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manutencao/RelatorioCliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/manutencao/RelatorioTecnico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manutencao/RelatorioTecnico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/manutencao/RelatorioCliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/manutencao/RelatorioTecnico.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/manutencao/Tecnico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manutencao/Tecnico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/manutencao/TestaManutencao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manutencao/TestaManutencao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tecnicos.bin" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,20 +25,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/manutencao/Cliente.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/manutencao/Aux.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/manutencao/Procedimento.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="424">
+              <caret line="181" column="27" selection-start-line="181" selection-start-column="18" selection-end-line="181" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -45,88 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/manutencao/TestaManutencao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/manutencao/Aux.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="193" column="36" lean-forward="true" selection-start-line="193" selection-start-column="36" selection-end-line="193" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/manutencao/RelatorioTecnico.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
-              <folding>
-                <element signature="e#162#163#0" expanded="true" />
-                <element signature="e#195#196#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/manutencao/RelatorioCliente.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="60" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
-              <folding>
-                <element signature="e#163#164#0" expanded="true" />
-                <element signature="e#196#197#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/manutencao/Relatorio.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/manutencao/ManipulaArquivo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1869">
-              <caret line="17" column="13" lean-forward="true" selection-end-line="174" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/manutencao/Manutencao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="33" column="48" lean-forward="true" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#261#262#0" expanded="true" />
-                <element signature="e#299#300#0" expanded="true" />
-                <element signature="e#346#347#0" expanded="true" />
-                <element signature="e#384#385#0" expanded="true" />
-                <element signature="e#601#602#0" expanded="true" />
-                <element signature="e#636#637#0" expanded="true" />
-                <element signature="e#666#667#0" expanded="true" />
-                <element signature="e#701#702#0" expanded="true" />
-                <element signature="e#731#732#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="135">
+              <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -160,24 +75,24 @@
         <option value="$PROJECT_DIR$/src/manutencao/itensProcedimento.java" />
         <option value="$PROJECT_DIR$/src/manutencao/ItemProcedimento.java" />
         <option value="$PROJECT_DIR$/src/manutencao/Pessoa.java" />
-        <option value="$PROJECT_DIR$/src/manutencao/Relatorio.java" />
-        <option value="$PROJECT_DIR$/src/manutencao/Cliente.java" />
-        <option value="$PROJECT_DIR$/src/manutencao/Tecnico.java" />
         <option value="$PROJECT_DIR$/src/manutencao/Procedimento.java" />
-        <option value="$PROJECT_DIR$/src/manutencao/Manutencao.java" />
         <option value="$PROJECT_DIR$/src/manutencao/ManipulaArquivo.java" />
         <option value="$PROJECT_DIR$/src/manutencao/RelatorioTecnico.java" />
         <option value="$PROJECT_DIR$/src/manutencao/RelatorioCliente.java" />
         <option value="$PROJECT_DIR$/src/manutencao/TestaManutencao.java" />
+        <option value="$PROJECT_DIR$/src/manutencao/Relatorio.java" />
+        <option value="$PROJECT_DIR$/src/manutencao/Cliente.java" />
+        <option value="$PROJECT_DIR$/src/manutencao/Tecnico.java" />
+        <option value="$PROJECT_DIR$/src/manutencao/Manutencao.java" />
         <option value="$PROJECT_DIR$/src/manutencao/Aux.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="67" />
-    <option name="y" value="25" />
-    <option name="width" value="1853" />
-    <option name="height" value="1055" />
+    <option name="x" value="293" />
+    <option name="y" value="53" />
+    <option name="width" value="1390" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -187,6 +102,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -209,13 +125,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550692337694" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550798198088" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../atividadespoo" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -273,9 +188,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28555617" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2888766" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -284,7 +198,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32181427" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5345572" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -322,13 +236,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/manutencao/Interface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/manutencao/ItemProcedimento.java" />
     <entry file="file://$PROJECT_DIR$/arquivo.txt" />
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/io/ObjectInputStream.java">
@@ -345,10 +252,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/manutencao/Tecnico.java">
+    <entry file="file://$PROJECT_DIR$/src/manutencao/RelatorioCliente.java" />
+    <entry file="file://$PROJECT_DIR$/src/manutencao/RelatorioTecnico.java" />
+    <entry file="file://$PROJECT_DIR$/src/manutencao/Interface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        <state relative-caret-position="315">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
@@ -359,89 +268,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/manutencao/Cliente.java">
+    <entry file="file://$PROJECT_DIR$/src/manutencao/Tecnico.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/manutencao/Pessoa.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/manutencao/ManipulaArquivo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1869">
-          <caret line="17" column="13" lean-forward="true" selection-end-line="174" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="330">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/manutencao/Relatorio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        <state relative-caret-position="330">
+          <caret line="22" column="108" selection-start-line="22" selection-start-column="108" selection-end-line="22" selection-end-column="108" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/manutencao/RelatorioCliente.java">
+    <entry file="file://$PROJECT_DIR$/src/manutencao/ManipulaArquivo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="60" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
+        <state relative-caret-position="-1660">
+          <caret line="12" column="54" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="54" />
           <folding>
-            <element signature="e#163#164#0" expanded="true" />
-            <element signature="e#196#197#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manutencao/Pessoa.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manutencao/Cliente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/manutencao/Manutencao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="33" column="48" lean-forward="true" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+        <state relative-caret-position="600">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#261#262#0" expanded="true" />
-            <element signature="e#299#300#0" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-            <element signature="e#384#385#0" expanded="true" />
             <element signature="e#601#602#0" expanded="true" />
-            <element signature="e#636#637#0" expanded="true" />
-            <element signature="e#666#667#0" expanded="true" />
-            <element signature="e#701#702#0" expanded="true" />
-            <element signature="e#731#732#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/manutencao/RelatorioTecnico.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
-          <folding>
-            <element signature="e#162#163#0" expanded="true" />
-            <element signature="e#195#196#0" expanded="true" />
+            <element signature="e#639#640#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/manutencao/TestaManutencao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+        <state relative-caret-position="135">
+          <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/manutencao/Aux.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="193" column="36" lean-forward="true" selection-start-line="193" selection-start-column="36" selection-end-line="193" selection-end-column="36" />
+        <state relative-caret-position="424">
+          <caret line="181" column="27" selection-start-line="181" selection-start-column="18" selection-end-line="181" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
